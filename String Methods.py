@@ -1,0 +1,25 @@
+string = "hi, ansHUl!"
+
+print("string.upper():", string.upper())
+print("string.lower():", string.lower())
+print("string.strip('!'):", string.strip("!"))
+print("string.rstrip('!'):", string.rstrip("!"))
+print("string.lstrip('hi'):", string.lstrip("hi"))
+print("string.replace('ansHUl','prasad'):", string.replace("ansHUl", "prasad"))
+print("string.split():", string.split())
+print("string.capitalize():", string.capitalize())
+print("string.title():", string.title())
+print("string.center(25):", string.center(25))
+print("string.swapcase():", string.swapcase())
+print("string.count('a'):", string.count("a"))
+print("string.startswith('hi'):", string.startswith("hi"))
+print("string.endswith('!'):", string.endswith("!"))
+print("string.find('H'):", string.find("H"))  # return -1 if not found
+print("string.index('H'):", string.index("H"))  # raise an error if not found
+print("'aA1'.isalnum():", "aA1".isalnum())
+print("'aA'.isalpha():", "aA".isalpha())
+print("'abc@'.islower():", "abc@".islower())
+print("'ABC@'.isupper():", "ABC@".isupper())
+print("'Hi anshul'.isprintable():", "Hi anshul".isprintable())
+print("'    '.isspace():", "    ".isspace())
+print("'A Bee'.istitle():", "A Bee".istitle())
