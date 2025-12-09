@@ -1,0 +1,10 @@
+fruit = "Mango"
+print(fruit[0:4])
+print(fruit[1:4])
+print(fruit[:4])
+print(fruit[0:])
+print(fruit[:])
+print(fruit[0:-1])
+print(fruit[-3:4])
+print(fruit[-2:-4])
+print("anshul"[-6:-3])
