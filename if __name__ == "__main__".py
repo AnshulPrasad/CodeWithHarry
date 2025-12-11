@@ -1,0 +1,3 @@
+import anshul
+
+anshul.welcome()
