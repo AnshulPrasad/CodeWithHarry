@@ -19,7 +19,7 @@ def decode(text):
         return text
 
 
-enc = encode(inp)
-dec = decode(enc)
+enc = " ".join(encode(i) for i in inp.split())
+dec = " ".join(decode(i) for i in enc.split())
 print(f"Encoded {inp}: {enc}")
 print(f"Decoded {enc}: {dec}")
