@@ -1,10 +1,13 @@
 inp = input("Enter message: ")
 
+s = "abc"
+e = "123"
+
 
 def encode(text):
     if len(text) > 3:
         text = text[1:] + text[0]
-        text = "123" + text + "xyz"
+        text = s + text + e
         return text
     else:
         return text[::-1]
@@ -19,7 +22,12 @@ def decode(text):
         return text
 
 
-enc = " ".join(encode(i) for i in inp.split())
-dec = " ".join(decode(i) for i in enc.split())
-print(f"Encoded {inp}: {enc}")
-print(f"Decoded {enc}: {dec}")
+print("1 for encoding, 2 for decoding.")
+option = int(input("Enter mode: "))
+
+if option == 1:
+    enc = " ".join(encode(i) for i in inp.split())
+    print(f"Encoded {inp}: {enc}")
+elif option == 2:
+    dec = " ".join(decode(i) for i in inp.split())
+    print(f"Decoded {inp}: {dec}")
