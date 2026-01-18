@@ -12,18 +12,19 @@ while True:
         break
 
     computer = random.choice(list(choices.keys()))
+    print(f"user move: {user}")
     print(f"computer move: {computer}")
 
     a = matrix[choices[computer]][choices[user]]
 
     if a == 1:
         point_u += 1
-        print("You won")
+        print("You won\n")
     elif a == 0:
-        print("Draw")
+        print("Draw\n")
     else:
         point_c += 1
-        print("You lost")
+        print("You lost\n")
 
 
 print(f"User's points: {point_u}")
