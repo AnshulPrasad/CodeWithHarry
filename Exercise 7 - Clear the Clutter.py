@@ -10,4 +10,4 @@ def rename(folder_path, extension):
             i += 1
 
 
-rename("/home/anshul/Documents/CodeWithHarry/temp", ".txt")
+rename("/home/anshul/Documents/CodeWithHarry/txt", ".txt")
